@@ -3,10 +3,11 @@
     margin-top: 7rem;
     text-align: center;
     background-color: var(--cor-fundo-cinza-claro);
+    padding: 5rem 0;
 }
 
 .footer .container {
-    padding: 5rem 0;
+    
 }
 
 .footer h2 {

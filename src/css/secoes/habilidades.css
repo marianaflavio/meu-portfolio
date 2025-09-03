@@ -1,10 +1,8 @@
 /* HABILIDADES */
-.habilidades .container-habilidades {    
+.habilidades .container-habilidades .row{    
     text-align: center;    
-    display: flex;
     justify-content: center;    
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .habilidades .container-habilidades .informacoes{
@@ -15,10 +13,10 @@
 .habilidades .container-habilidades .informacoes p,
 .habilidades .container-habilidades .informacoes h3,
 .habilidades .container-habilidades .informacoes .logo i{
-    transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    -webkit-transition: all .3s ease;
+    transition: all 0.3s ease; /* somente o transition funcionaria na maioria dos navegadores */
+    -moz-transition: all 0.3s ease; /* fallback para garantir que vai funcionar no mozilla */
+    -o-transition: all 0.3s ease; /* fallback para garantir que vai funcionar no opera */
+    -webkit-transition: all 0.3s ease; /* fallback para garantir que vai funcionar no IE */
 }
 
 .habilidades .container-habilidades .informacoes:hover p,
